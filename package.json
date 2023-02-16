@@ -6,6 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r0fest/dastruct.git"
+  },
+  "bugs": {
+    "url": "https://github.com/r0fest/dastruct/issues"
+  },
+  "homepage": "https://github.com/r0fest/dastruct/issues#readme",
   "author": "r0fest",
   "license": "ISC"
 }
