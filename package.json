@@ -15,5 +15,8 @@
   },
   "homepage": "https://github.com/r0fest/dastruct/issues#readme",
   "author": "r0fest",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.75.0"
+  }
 }
