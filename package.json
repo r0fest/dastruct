@@ -1,11 +1,12 @@
 {
   "name": "dastruct",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Data structures",
   "type": "module",
   "main": "dist/dastruct.cjs.js",
   "module": "dist/dastruct.esm.js",
   "types": "dist/types/dastruct.d.ts",
+  "sideEffects": false,
   "prepublish": "npm run build && npm run test",
   "exports": {
     "require": "./dist/dastruct.cjs.min.js",
