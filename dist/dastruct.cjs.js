@@ -53,6 +53,25 @@ function _toPropertyKey(arg) {
   return typeof key === "symbol" ? key : String(key);
 }
 
+var LinkedList = /*#__PURE__*/function () {
+  function LinkedList() {
+    _classCallCheck(this, LinkedList);
+    _defineProperty(this, "head", null);
+  }
+  _createClass(LinkedList, [{
+    key: "add",
+    value: function add() {
+      this.head = 'test';
+    }
+  }, {
+    key: "remove",
+    value: function remove() {
+      this.head = null;
+    }
+  }]);
+  return LinkedList;
+}();
+
 var Stack = /*#__PURE__*/function () {
   function Stack() {
     var items = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
@@ -91,9 +110,11 @@ var Stack = /*#__PURE__*/function () {
 }();
 
 var dastruct = {
-  Stack: Stack
+  Stack: Stack,
+  LinkedList: LinkedList
 };
 
+exports.LinkedList = LinkedList;
 exports.Stack = Stack;
 exports.default = dastruct;
 //# sourceMappingURL=dastruct.cjs.js.map

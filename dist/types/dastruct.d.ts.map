@@ -1,1 +1,1 @@
-{"version":3,"file":"dastruct.d.ts","sourceRoot":"","sources":["../src/dastruct.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,SAAS,CAAC;AAE5B,OAAO,EACL,KAAK,GACN,CAAC;;;;AAEF,wBAEE"}
+{"version":3,"file":"dastruct.d.ts","sourceRoot":"","sources":["../src/dastruct.ts"],"names":[],"mappings":"AAAA,OAAO,UAAU,MAAM,eAAe,CAAC;AACvC,OAAO,KAAK,MAAM,SAAS,CAAC;AAE5B,OAAO,EACL,KAAK,EACL,UAAU,GACX,CAAC;;;;;AAEF,wBAGE"}
