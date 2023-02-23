@@ -4,3 +4,4 @@ declare const _default: {
     Stack: typeof Stack;
 };
 export default _default;
+//# sourceMappingURL=dastruct.d.ts.map

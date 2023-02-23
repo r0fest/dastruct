@@ -7,3 +7,4 @@ export default class Stack<T> {
     pop(): T | undefined;
     peek(index?: number): T | undefined;
 }
+//# sourceMappingURL=stack.d.ts.map

@@ -1,14 +1,27 @@
 {
   "name": "dastruct",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Data structures",
-  "main": "dist/dastruct.ts",
-  "types": "dist/dastruct.d.ts",
-  "module": "dist/dastruct.js",
+  "type": "module",
+  "main": "dist/dastruct.cjs.js",
+  "module": "dist/dastruct.esm.js",
+  "types": "dist/types/dastruct.d.ts",
   "prepublish": "npm run build && npm run test",
+  "exports": {
+    "require": "./dist/dastruct.cjs.min.js",
+    "import": "./dist/dastruct.esm.min.js"
+  },
+  "files": [
+    "dist",
+    "src",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
-    "dev": "webpack --env development --watch",
-    "build": "webpack --env production",
+    "clean": "rimraf dist",
+    "build:bundles": "rollup -c",
+    "build": "npm-run-all -l clean -p build:bundles",
     "test": "jest"
   },
   "repository": {
@@ -27,22 +40,27 @@
   "author": "r0fest",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.21.0",
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.21.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-eslint": "^9.0.3",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
     "@types/jest": "^29.4.0",
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "@typescript-eslint/parser": "^5.52.0",
-    "babel-loader": "^9.1.2",
     "eslint": "^8.34.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-plugin-import": "^2.27.5",
-    "eslint-webpack-plugin": "^4.0.0",
     "husky": "^8.0.3",
     "jest": "^29.4.3",
-    "ts-loader": "^9.4.2",
-    "typescript": "^4.9.5",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1"
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^4.1.2",
+    "rollup": "^3.17.2",
+    "typescript": "^4.9.5"
   }
 }

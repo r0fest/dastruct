@@ -1,4 +1,4 @@
-import { Stack } from "../dist/dastruct";
+import { Stack } from "../src/dastruct";
 
 describe('Stack init', () => {
   test('empty', () => {
